@@ -3,6 +3,8 @@
 # You can return the answer in any order.
 
 def two_sum(numlist, target):
+    numlist = input("Enter a list of numbers separated by commas: ").split(",")
+    numlist = [int(num) for num in numlist]
     for idx, num in enumerate(numlist):
         print(f"{idx}: {num} looking for {target-num}")
         for idx2, num2 in enumerate(numlist):
@@ -11,5 +13,6 @@ def two_sum(numlist, target):
                     return [idx, idx2]
 
 if __name__ == "__main__":
-    print(two_sum([2,7,11,15], 9))
-    print(two_sum([3,2,4], 6))
+    target = int(input("Enter the target sum: "))
+    result = two_sum([], target)
+    print(f"Output that adds up to {target}: {result}")
