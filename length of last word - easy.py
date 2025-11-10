@@ -6,7 +6,7 @@ def length_last_word(s):
     words = string.strip().split(" ")
     last_word = words[-1]
     print(len(last_word))
-    explanation = f"The last word is '{last_word}' with length {len(last_word)}."
+    explanation = f"The last word is '{last_word}', length {len(last_word)}."
     print(explanation)
 
 if __name__ == "__main__":
